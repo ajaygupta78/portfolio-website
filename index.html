@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="head-formating">
+        <div class="container">
+            <nav>
+                <div class="logo">Ajay Gupta</div>
+                <ul class="nav-links">
+                    <li class="sec-head"><a href="#home">Home</a></li>
+                    <li class="sec-head"><a href="#about">About</a></li>
+                    <li class="sec-head"><a href="#skills">Skills</a></li>
+                    <li class="sec-head"><a href="#project">Project</a></li>
+                    <li class="sec-head"><a href="#contact">Contact</a></li>
+                </ul>
+                <label class="mode">
+                    <input type="checkbox" checked="checked" id="darkmodebtn"/>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </label>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home-class">
+        <div class="container">
+            <div class="home-content">
+                <h1>Hello, I'm <span style="color: #3b82f6;" class="show"></span></h1>
+                <p class="home-subtitle"><span class="show"></span></p>
+                <div class="home-buttons">
+                    <a href="#project" class="btn">View My Project</a>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div>
+                    My name is Ajay Gupta, and I am a final-year Computer Science student focusing on web development. I specialize in frontend technologies including HTML, CSS, and JavaScript, and have practical experience with MySQL for basic database management. As part of my academic projects, I have built several portfolio websites and enjoy solving deployment and design challenges. I am currently seeking internship opportunities to gain professional experience, further enhance my technical skills, and contribute positively to a dynamic team. In my free time, I practice coding, learn new programming languages, and explore creative website design. My goal is to become a proficient full-stack developer and build impactful digital solutions.
+                </div>
+                <div class="about-image">
+                    <img src="./WhatsApp Image 2025-09-24 at 23.17.23_7c883345.png" alt="My Photo">
+                </div>
+            </div>
+        </div>
+        <a id="cv" href="https://drive.google.com/file/d/1f_n-xV_3Rjhd5V3r0oWCzRFgZagvGPat/view?usp=drivesdk"> Download CV </a>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./code-solid-full.svg" alt="frontend"></div>
+                    <h3>Frontend Development</h3>
+                    <p>A front-end developer builds and create websites and applications, visual design, layout, and
+                        user interaction using languages like HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./user-shield-solid-full.svg" alt="Security"></div>
+                    <h3>Cyber Security</h3>
+                    <p>Cybersecurity is the practice of protecting computer systems, networks, devices, and data from
+                        cyberattacks, damage, or unauthorized access.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./windows-brands-solid-full.svg" alt="operating"></div>
+                    <h3>Operating System</h3>
+                    <p>An operating system (OS) is essential system software that manages a computer's hardware and
+                        software resources, acting as an intermediary between the user and the computer.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><img src="./square-github-brands-solid-full.svg" alt="GitHub"></div>
+                    <h3>Git Github</h3>
+                    <p><b>GIT - </b>Git is a version control system that helps developers manage changes to their code
+                        over time.</p>
+                    <p><b>GITHUB - </b>GitHub is a web-based platform that hosts Git repositories, making it easy to
+                        share and collaborate on code with others.</p>
+                </div>
+                <div class="skill-card">
+                    <div id="figma" class="skill-icon"> <i class="fa-brands fa-figma"></i> </div>
+                    <h3>Figma & Canva</h3>
+                    <p><b>FIGMA - </b>For making this website you have a team which consists of UI/UX designer, Front-end developer, Back-end developer and others.</p>
+                    <p><b>CANVA - </b>Canva is a popular graphic design platform that allows users to create a wide range of visual content, including social media graphics, presentations, posters, flyers, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <h2>My Project</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="./pngkey.com-tic-tac-toe-png-2056860.svg" alt="tik-toc-toe">
+                    </div>
+                    <div class="project-info">
+                        <h3>Tic Toe Tac Game</h3>
+                        <p>Built a Tik Tok Toe Game using HTML CSS JavaScript with help of DOM manipulation. </p>
+                        <div class="project-tags">
+                            <a href="https://github.com/ajaygupta78/TIK-TOK-TOE-Game"><span class="project-tag">View Code</span></a>
+                            <a href="https://tiktoktoegame-xi.vercel.app/"><span class="project-tag">Try now</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="./todo_list.svg" alt="todo-list-application">
+                    </div>
+                    <div class="project-info">
+                        <h3>Voice Todo List</h3>
+                        <p>Simple voice todo list with dynamic DOM manipulation and local storage. <br> Using HTML CSS JavaScript. </p>
+                        <div class="project-tags">
+                            <a href="https://github.com/ajaygupta78/TODO-VOICE-LIST"><span class="project-tag">View Code</span></a>
+                            <a href="https://todo-voice-list.vercel.app/"><span class="project-tag">Try now</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="./logo of appoinment.png" alt="tik-toc-toe">
+                    </div>
+                    <div class="project-info">
+                        <h3>Online Appointment Booking</h3>
+                        <p>Book My Doctor is a complete online appointment scheduling and medical management system. We bridge the gap between patients, top hospitals, and specialized doctors to offer premium healthcare at your fingertips. </p>
+                        <div class="project-tags">
+                            <a href="https://github.com/ajaygupta78/BOOK_MY_DOCTOR"><span class="project-tag">View Code</span></a>
+                            <a href="https://book-my-doctor-ajay-pied.vercel.app/"><span class="project-tag">Try now</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>I'm always interested in new opportunities, collaborations, about web development and its
+                        related. Feel free to reach out!</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>ajaygupta7894563255@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone No</h3>
+                            <p>+91-8303999071</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Gorakhpur, India</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" method="post" action="https://sheetdb.io/api/v1/lyjf38p4a4xrb">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="data[NAME]" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="data[EMAIL]" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <input type="text" name="data[MESSAGE]" id="message" class="form-control" required>
+                    </div>
+                    <button type="submit" name="submit" value="submit" class="btn form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo" id="connect-social">LET'S CONNECT ON SOCIAL MEDIA!</div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ajay-gupta18" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ajaygupta78" class="social-link"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/ajaygupta113715?t=dubR9Ouf-Od2WRI1oAqnJA&s=09" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100054760040673" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/innocent__boy242/?igsh=dHkxa3o5MXFhNW5s" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="copyright">© 2025 Ajay Gupta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

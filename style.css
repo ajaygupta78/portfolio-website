@@ -1,0 +1,883 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    font-size: 1.2em;
+    background-color: black;
+    padding: 12px;
+    border-radius: 12px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    color: #3b82f6;
+    border: 2px solid ;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 12px 2px black;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+}
+
+.btn-outline:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+
+}
+
+section {
+    scroll-margin-top: 80px;
+    padding: 4rem 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    box-shadow: 0px 0px 6px 1px rgb(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.nav-links {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    right: 100px;
+}
+
+.nav-links a {
+    color: black;
+    font-weight: 500;
+}
+
+.hamburger {
+    position: absolute;
+    right: 100px;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.home-class {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.home-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#home h1 .show {
+    position: relative;
+}
+
+#home p .show {
+    position: relative;
+}
+
+#home h1 .show::before {
+    content: "Ajay Gupta";
+    animation: word 20s infinite;
+}
+
+#home h1 .show::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 110%;
+    background-color: rgb(255, 255, 255);
+    border-left: 2px solid black;
+    right: -5px;
+    animation: cursor-blink .6s infinite, typeing 20s steps(10) infinite;
+}
+
+@keyframes cursor-blink {
+    to {
+        border-left: 2px solid white;
+    }
+}
+
+@keyframes word {
+
+    0%,20% {
+        content: "Ajay Gupta";
+        color: #10b981;
+    }
+
+    21%,40% {
+        content: "Ajay Gupta";
+        color: red;
+    }
+
+    41%,60% {
+        content: "Ajay Gupta";
+        color: rgb(147,26,149);
+    }
+
+    61%,80% {
+        content: "Ajay Gupta";
+        color: aqua;
+    }
+
+    81%,100% {
+        content: "Ajay Gupta";
+        color: mediumblue;
+    }
+}
+
+@keyframes typeing {
+
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 8px);
+    }
+}
+
+#home p .show::before {
+    content: "A passionate Frontend Developer creating beautiful and functional web experiences. ";
+    color: blue;
+    animation: words 20s infinite;
+}
+
+@keyframes words {
+
+    0%,20% {
+        content: "A passionate Frontend Developer creating beautiful and functional web experiences. ";
+        color: #10b981;
+    }
+
+    21%,40% {
+        content: "A passionate Frontend Developer creating beautiful and functional web experiences. ";
+        color: red;
+    }
+
+    41%,60% {
+        content: "A passionate Frontend Developer creating beautiful and functional web experiences. ";
+        color: rgb(147,26,149);
+    }
+
+    61%,80% {
+        content: "A passionate Frontend Developer creating beautiful and functional web experiences. ";
+        color: aqua;
+    }
+
+    81%,100% {
+        content: "A passionate Frontend Developer creating beautiful and functional web experiences. ";
+        color: mediumblue;
+    }
+}
+
+#connect-social {
+    animation: social-words normal 3s  infinite;
+}
+
+@keyframes social-words {
+
+    0%,20% {
+        color: #10b981;
+    }
+
+    21%,40% {
+        color: red;
+    }
+
+    41%,60% {
+        color: rgb(147,26,149);
+    }
+
+    61%,80% {
+        color: aqua;
+    }
+
+    81%,100% {
+        color: mediumblue;
+    }
+}
+
+.home-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 0.1), 0 4px 6px -2px rgb(0, 0, 0, 0.05);
+}
+
+.about-image:hover {
+    border: 2px solid white;
+    box-shadow: inset 12px 12px 12px black, 0px 0px 12px 12px black;
+}
+
+#cv {
+    position: relative;
+    top: 20px;
+    margin-left: 95px;
+}
+
+#cv:hover {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: inset 0px 0px 225px 1px black;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 12px 2px black, inset 0px 0px 12px 2px black;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+    color: #3b82f6;
+}
+
+#figma {
+    font-size: 40px;
+    color: black;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-item {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px 1px black;
+    transition: all 0.3s ease;
+}
+
+.project-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    border-radius: 0.5rem;
+    padding: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 12px 2px black, inset 0px 0px 12px 2px black;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-tag {
+    background-color: #e2e8f0;
+    color: black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 1px 0.1px black;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 0.375rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+#message {
+    min-height: max-content;
+}
+
+
+footer {
+    background-color: rgb(30,41,59);
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+}
+
+.social-link:hover {
+    transform: scale(1.5);
+    color: white;
+    background-color: black;
+}
+
+.copyright {
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+.mode {
+        color: black;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+
+        .fa-moon,.fa-sun {
+            /* position: absolute; */
+            position: relative;
+            animation: animate 0.5s;
+        }
+
+        .fa-moon {
+            display: none;
+        }
+
+        input:checked ~ .fa-sun {
+            display: none;
+        }
+
+        input:checked ~ .fa-moon {
+            display: block;
+        }
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(-360deg) scale(0);
+        opacity: 0;
+    }
+    75% {
+        transform: rotate(25deg);
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgb(0, 0, 0, 0.01), 0 2px 4px -1px rgb(0, 0, 0, 0.06);
+    z-index: 99;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+    transform: translateY(-10px);
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+
+    .form-group {
+        color: black;
+    }
+
+    .project-info {
+        color: black;
+    }
+
+    .skill-card:hover {
+        color: black;
+    }
+
+    #cv:hover {
+        color: white;
+    }
+
+    .about-image {
+        box-shadow: 0px 0px 6px 6px rgb(147,26,149);
+    }
+
+    .skill-card {
+        color: black;
+    }
+
+    .skill-card:hover {
+        box-shadow: inset 0px 0px 225px 1px black;
+    }
+
+    .back-to-top {
+        color: rgb(147,26,149);
+    }
+
+    .back-to-top:hover {
+        background-color: rgb(147,26,149);
+        color: white;
+    }
+
+    .social-link {
+        background-color: #fff;
+        color: rgb(147,26,149);
+    }
+
+    .social-link:hover {
+        background-color: rgb(147,26,149);
+        color: white;
+    }
+
+    .copyright {
+        color: white;
+        font-weight: bold;
+    }
+
+    footer {
+        background-color: black;
+        box-shadow: 0px 0px 12px 1px white;
+    }
+
+    .btn {
+        border: 3px solid rgb(147,26,149);
+        background-color: #fff;
+        color: black;
+        font-weight: bolder;
+    }
+
+    .btn:hover {
+        border: 3px solid white;
+        background-color: black;
+        color: white;
+        font-weight: bolder;
+    }
+
+    header {
+        background-color: black;
+        box-shadow: 0px 0px 6px 1px white;
+        color: white;
+    }
+
+    .mode {
+        color: yellow;
+    }
+
+    .logo,.nav-links a {
+        color: white;
+        font-weight: bolder;
+    }
+
+    .nav-links a:hover {
+        background-color: #fff;
+        color: black;
+    }
+
+    .contact-icon {
+        color: white;
+    }
+
+    #connect-social {
+        animation: social-words 3s infinite;
+    }
+
+    #home h1 .show::after {
+        background-color: black;
+    }
+
+    .hamburger span{
+        background-color: #fff;
+    }
+
+    .project-item:hover {
+        box-shadow: inset 0px 0px 12px 2px black;
+    }
+
+    .skill-card,.project-item,.contact-form {
+        box-shadow: 0px 0px 12px 2px white;
+    }
+
+    .nav-links {
+        background-color: black;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        position: absolute;
+        right: 90px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .about-content,
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #cv {
+        margin-left: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        gap: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgb(0, 0, 0, 0.01), 0 2px 4px -1px rgb(0, 0, 0, 0.06);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #cv {
+        margin-left: 65px;
+    }
+
+    .project-item:hover {
+        transform: scale(0.9);
+    }
+    
+    .skill-card:hover {
+        transform: scale(0.9);
+        box-shadow: 0px 0px 12px 2px black, inset 0px 0px 12px 2px black;
+    }
+
+    .hamburger {
+        right: 35px;
+    }
+
+    .mode {
+        position: absolute;
+        right: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 3rem 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    #cv {
+        margin-left: 65px;
+    }
+
+    #connect-social {
+        font-size: 1rem;
+    }
+
+    .skill-card {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.2rem;
+        transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+        transform: scale(0.9);
+        box-shadow: 0px 0px 12px 2px black, inset 0px 0px 12px 2px black;
+    }
+
+    .project-info {
+        padding: 1rem;
+    }
+
+    .project-item:hover {
+        transform: scale(0.9);
+    }
+
+    .social-link {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 359px) {
+    h1,h1 span {
+        font-size: 1.64rem;
+    }
+}
